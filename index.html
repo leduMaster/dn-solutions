@@ -1,9 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DN Solutions</title>
+  
 
   <!-- Favicon (small icon in browser tab) -->
   <link rel="icon" type="image/png" href="favicon.png">
@@ -11,59 +10,143 @@
   <!-- Optional: Add Apple Touch Icon for iOS devices -->
   <link rel="apple-touch-icon" href="favicon.png">
 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dušan Nikolić - CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f7f9fb;
+      color: #1f2937;
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #00ffff, #007f7f);
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
+      padding: 0;
     }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
     }
-
-    p {
-      font-size: 1.2rem;
-      max-width: 500px;
+    .sidebar {
+      background: #007ACC;
+      color: white;
+      padding: 30px;
     }
-
-    .card {
-      background: rgba(0, 0, 0, 0.3);
-      padding: 2rem;
-      border-radius: 20px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    .sidebar h1 {
+      font-size: 28px;
+      margin-bottom: 4px;
     }
-
-    .logo {
-      max-width: 200px;
-      margin-bottom: 1rem;
+    .sidebar p {
+      margin: 4px 0;
+      font-size: 14px;
     }
-
-    footer {
-      position: absolute;
-      bottom: 15px;
-      font-size: 0.9rem;
-      opacity: 0.7;
+    .sidebar a {
+      color: #e5e7eb;
+      text-decoration: none;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .main {
+      padding: 30px 40px;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section h2 {
+      color: #007ACC;
+      font-size: 18px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 4px;
+    }
+    .section p, .section li {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6px;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <!-- Main Logo -->
-    <img src="logo.png" alt="DN Solutions Logo" class="logo">
-    <h1>DN Solutions</h1>
-    <p>Our website is currently under construction.  
-    Exciting things are on the way — stay tuned!</p>
-  </div>
+  <div class="container">
+    <div class="sidebar">
+      <img style="display:block;align-items: center;padding-left: 0px;border-radius: 45%;border-left-width: 50px;margin-left: 60px;" alt="Dusan_Nikolic_fotka" src="cv.jpg">
+      <h1>Dušan Nikolić</h1>
+      <p>IT Support Engineer / System Administrator</p>
+      <p>📍 Serbia</p>
+      <p>📧 dn.1995@hotmail.com</p>
+      <p>📞 +381 65 402 9452</p>
+      <a href="https://dnsolutions.rs">WebSite</a>
+      <a href="https://linkedin.com/in/nikolic-dusan">LinkedIn</a>
+      <a href="https://github.com/leduMaster">GitHub</a>
 
-  <footer>© 2025 DN Solutions</footer>
+      <h2>Languages</h2>
+      <p>Serbian — Native</p>
+      <p>English — Advanced (C1)</p>
+
+      <h2>Interests</h2>
+      <p>Cars, DIY projects, Reverse Engineering, Reading</p>
+    </div>
+
+    <div class="main">
+      <div class="section">
+        <h2>Profile Summary</h2>
+        <p>A results-driven IT professional with extensive experience in IT support, system administration, networking, and DevOps. Proficient in managing Windows and Linux systems, Microsoft Entra ID (Azure AD), Proxmox virtualization, and enterprise software environments. Strong focus on reliability, automation, and high-quality IT service delivery.</p>
+      </div>
+
+      <div class="section">
+        <h2>Work Experience</h2>
+        <p><strong>IT Support Engineer / System Administrator</strong><br>BUZZ IT D.O.O — April 2021 – Present</p>
+        <ul>
+          <li>Provide end-to-end IT support for users, infrastructure, and systems across multiple environments.</li>
+          <li>Build, configure, and maintain PC and server hardware.</li>
+          <li>Manage software installations, updates, and licensing.</li>
+          <li>Administer Microsoft Entra ID (Azure AD) and user access management.</li>
+          <li>Handle system migrations, backups, and cloud/on-prem operations.</li>
+          <li>Manage Linux servers and Proxmox virtualization clusters.</li>
+          <li>Collaborate on DevOps automation and infrastructure workflows.</li>
+        </ul>
+
+        <p><strong>Implementation Engineer – Passive Optical Networks</strong><br>Roaming Networks D.O.O — Jan 2019 – Aug 2019</p>
+        <ul>
+          <li>Installed and tested optical network infrastructure for over 300,000 clients.</li>
+          <li>Supervised 7 teams (70+ workers) ensuring timely project delivery.</li>
+          <li>Handled documentation and client implementation schedules.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Education</h2>
+        <p><strong>Bachelor of Applied Science in Web Development</strong><br>University of Belgrade – ICT College, 2021</p>
+        <p>Final Thesis: Microservices Architecture. Studied .NET, PHP, MVC, Laravel, C#, C++, HTML, CSS, JS, Angular. Completed additional courses in Linux Cloud, VOIP, and Cisco network solutions.</p>
+      </div>
+
+      <div class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-list">
+          <p>Windows / Linux Admin</p>
+          <p>Microsoft Entra ID (Azure AD)</p>
+          <p>Proxmox / VMware</p>
+          <p>Networking (LAN/WAN/VPN)</p>
+          <p>PowerShell / Bash</p>
+          <p>DevOps Automation</p>
+          <p>ASP.NET / PHP / Laravel</p>
+          <p>SQL / REST APIs / Microservices</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
